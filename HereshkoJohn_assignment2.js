@@ -10,10 +10,14 @@ var myDungeon = "Black Mist"
 var myKnight = true
 
 // Prompt for input
-myName = prompt("What is your name, Knight?","Lancelot");
+myName = prompt("What is your name, Knight?","Lancelot")
 
-if (myName === Lancelot){
-console.log("Hello there, Sir Lancelot!")
-} else {
-console.log("Oh...from a distance, you looked like Sir Lancelot. Ahh, never you mind.")
+var proclaimName = function(name){
+  if (name = "Lancelot"){ // Prompt Argument
+    console.log("Hello there, Knight Lancelot! We have quite the adventure planned for you today!")
+  } else {
+    console.log("Hmm...from a distance you looked very similar to Knight Lancelot...Ahh, never you mind.");
+  };
 };
+
+//Adding in 
