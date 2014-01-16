@@ -20,4 +20,6 @@ var proclaimName = function(name){
   };
 };
 
+proclaimName(myName);
+
 //Adding in 
