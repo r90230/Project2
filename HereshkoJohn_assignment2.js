@@ -37,12 +37,22 @@ var goingNorth = function(direction, steps) {
 		console.log("I am not pursuing the dragon!")
 	};
 	}; // Creating Boolean function
-	
+
 while (mySteps > 0){
 	goingNorth
 	console.log("I am " + mySteps + " away from the dragon!")
 	mySteps--
 }; // While loop for steps
 
-console.log("I have reached the dragon!")
+console.log("I have reached the dragon!") // Output for while loop
+
+for (myHealth === 100; myHealth > 0; myHealth - 5){
+     console.log("The dragon has hit me! I have " + myHealth + " health points left!")
+}; // For loop
+
+console.log("The dragon is damaging me too much! I am at " + myHealth + " health points now! I must retreat"); // Output for For Loop
+
+
+
+
 
