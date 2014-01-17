@@ -6,12 +6,10 @@ Code for Project 2
 
 // Variables
 var myHealth = 100;
-var myDungeon = "Black Mist";
-var myWeapon = true;
-var myArrows = 20;
-var mySharpness = 20;
+var myArrow = " Arrow!";
 var dragonNorth = true;
-var mySteps = 30
+var mySteps = 30;
+var myArrowColor = "The Vermillion Red";
 
 // Prompt for input
 myName = prompt("What is your name, Knight?","Lancelot")
@@ -32,27 +30,38 @@ dragonNorth = confirm("The dragon appears to be heading to the north. Ok to head
 
 var goingNorth = function(direction, steps) {
 	if (direction === true && steps > 0){
-		console.log("I am going north to find the dragon!")
-	} else if (dragonNorth === false){
-		console.log("I am not pursuing the dragon!")
+		console.log("I am going north to find the dragon!");
+	} else if (direction === false){
+		console.log("The dragon is chasing me!");
 	};
+	return steps;
+	return direction;
 	}; // Creating Boolean function
-
-while (mySteps > 0){
-	goingNorth
-	console.log("I am " + mySteps + " away from the dragon!")
+	
+while (dragonNorth === true && mySteps > 0){
+	goingNorth(dragonNorth, mySteps)
+	console.log("I am " + mySteps + " steps away from the dragon!") // While loop output
 	mySteps--
-}; // While loop for steps
+}; // While loop
 
-console.log("I have reached the dragon!") // Output for while loop
+console.log("I have reached the dragon!");
 
-for (myHealth === 100; myHealth > 0; myHealth - 5){
-     console.log("The dragon has hit me! I have " + myHealth + " health points left!")
+for (myHealth = 100; myHealth > 5; myHealth -= 5){
+     console.log("The dragon has hit me! I have " + myHealth + " health points left!");
+	 myHealth - 5;
 }; // For loop
 
 console.log("The dragon is damaging me too much! I am at " + myHealth + " health points now! I must retreat"); // Output for For Loop
 
 
-
-
-
+var theVermillionArrow = function(color, arrow){
+	console.log("The dragon is right beside me! I must use my ultimate weapon!")
+	color += arrow // String concatenation
+	console.log(color)
+	return color
+	}; //String function
+	
+	var theBattle = theVermillionArrow(myArrowColor, myArrow) // Output of String function
+	console.log(theBattle);
+	
+	
